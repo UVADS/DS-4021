@@ -1,40 +1,43 @@
-\documentclass{article}
-\usepackage[margin=0.5in]{geometry}
+\documentclass{standalone}
+
+%\usepackage[margin=1in]{geometry}
 \usepackage{longtable}
 \usepackage{array}
 \usepackage[table]{xcolor}
 \usepackage{graphicx}
+\pagenumbering{gobble}
 
 \begin{document}
 
 \renewcommand{\arraystretch}{1.4}
 
-\begin{longtable}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{5cm}|>{\raggedright}p{5cm}|>{\raggedright\arraybackslash}p{3cm}|}
+\begin{tabular}{|>{\raggedright}p{2.5cm}|>{\raggedright}p{5cm}|>{\raggedright}p{5cm}|>{\raggedright\arraybackslash}p{3cm}|}
 \hline
 \textbf{Week} & \textbf{Monday Class} & \textbf{Wednesday Class} & \textbf{Suggested Readings} \\
 \hline
 \multicolumn{4}{|c|}{\cellcolor{gray!20}\textbf{Module 1: Course Introduction}} \\
 \hline
 25-27 August & Course Overview. \newline Skill Assessment (for Group Formation) & Introduction to PyTorch &
-A. Chapter 12: First steps with PyTorch\\
+A. Chapter 12: {\small First steps with PyTorch}\\
 \multicolumn{4}{|c|}{\cellcolor{gray!20}\textbf{Module 2: Dealing with High Dimensional Data}} \\
 \hline
 1-3 September & Labour Day (No class) & Refreshing Regularized Regression through PyTorch and Stochastic Gradient Descent  & \\
 \hline
-8-10 September & Principal Component Analysis as a preprocessing step. \newline Introduction to Pipelines & {\bf Lab}: Dimensionality Reduction and Multiple Outcomes: Partial Least Squares Regression (PLS) & \\
+8-10 September & Principal Component Analysis as a preprocessing step. \newline Introduction to Pipelines & {\bf Lab}: Partial Least Squares Regression (PLS) & \\
 \hline
 \multicolumn{4}{|c|}{\cellcolor{gray!20}\textbf{Module 3: Exploiting Non-Linear Relationships in Data}} \\
 \hline
-15-17 September & Support Vector Machine I: The linear case & {\bf Lab}: Polynomial Regression as a First Approximation to Non-Linear problems & \\
+15-17 September & Support Vector Machine I: The Linear Case & {\bf Lab}: Polynomial Regression as a First Approximation to Non-Linear problems & A. Chapter 3: {\small Maximum margin classification with support vector machines}\\
 \hline
-22-24 September & Support Vector Machine II: The non-linear case through the kernel Trick & {\bf Lab}: Predicting Seismic Building Response with Support Vector Regrssion & \\
+22-24 September & Support Vector Machine II: The Non-Linear case through the Kernel Trick & {\bf Lab}: Predicting Seismic Building Response with Support Vector Regrssion & A. Chapter 3: {\small Solving nonlinear problems using a kernel SVM}\\
 \hline
-29 September-1 October & Kernels are everywhere: Kernel PCA \& Kernel Ridge Regression,  & {\bf Lab}: Non-linear dimensionality reductions: t-SNE, and UMAP
+29 September-1 October & Kernels are EVERYWHERE: Kernel PCA \& Kernel Ridge Regression,  & {\bf Lab}: Non-linear dimensionality reductions: t-SNE, and UMAP
  & \\
 \hline
-6-8 October & Neural Networks I: Introduction \& Multi-Layer Perceptrons (MLPs) & {\bf Lab}: Manual implementation of MLPs for Classification and Regression using toy data & \\
+6-8 October & Neural Networks I: Introduction \& Multi-Layer Perceptrons (MLPs) & {\bf Lab}: Manual implementation of MLPs for Classification and Regression using toy data & A. Chapter 11: {\small  Modeling complex functions with artificial neural networks}\\
 \hline
-13-15 October & Reading Day (No Class) & {\bf Lab}: Application of Regularization to Survival Analysis & 
+13-15 October & Reading Day (No Class) & {\bf Lab}: Application of Regularization to Survival Analysis & A. Chapter 12: {\small Building an NN model in PyTorch and Choosing activation functions for multilayer neural
+networks}%. A. Chapter 13: {\small Making model building more flexible with nn.Module"}
 \\
 \hline
 20-22 October & Neural Networks II: Deeper into model building, training and opmitization. & {\bf Lab}: Application of  Neural Networks to Real Data & \\
@@ -43,7 +46,7 @@ A. Chapter 12: First steps with PyTorch\\
 \hline
 \multicolumn{4}{|c|}{\cellcolor{gray!20}\textbf{Module 4: Ensemble Methods \& Meta-Learning}} \\
 \hline
-3-5 November & Bagging & Boosting: Adaptive Boosting and Gradient Boosting & \\
+3-5 November & Bagging: Bootstrap Aggregating and Random Forest & Boosting: Adaptive Boosting and Gradient Boosting & \\
 \hline
 10-12 November & {\bf Lab}: Classifying Internet of Things Device Types with Bagging and Boosting Methods  & {\bf Lab}:  Improving Student Performance Prediction through Stacking & \\
 \hline
@@ -57,6 +60,7 @@ A. Chapter 12: First steps with PyTorch\\
 \hline
 8-10 December & \multicolumn{3}{c|}{Final Project Time} \\
 \hline
-\end{longtable}
+\end{tabular}
+
 
 \end{document}
