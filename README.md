@@ -13,7 +13,7 @@ These are the main learning objectives:
 - Deepen their understanding of machine learning by exploring more advanced and state-of-the-art methods, including support vector machines, ensemble techniques, and neural networks. 
 - Understand the importance of structured workflows in solving data science problems. 
 - Gain first exposure to implementing machine learning models from scratch using PyTorch and applying them to real-world datasets. 
-- Apply machine learning models real-world datasets using the gold-standard library for machine learning, (scikit-learn.
+- Apply machine learning models real-world datasets using the gold-standard library for machine learning.
 - Critically evaluate and compare the performance of different models, considering trade-offs between accuracy, interpretability, and computational cost. 
 - Develop and document reproducible data science workflows, including code annotation, version control (GitHub), and final deliverables. 
 - Engage in collaborative, project-based learning by working effectively within a group to complete lab assignments and a final project. 
