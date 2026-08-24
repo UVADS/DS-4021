@@ -1,0 +1,112 @@
+\documentclass{standalone}
+
+%\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\pagenumbering{gobble}
+
+
+\definecolor{MLBridge}{HTML}{E40303}       % red
+\definecolor{HighDim}{HTML}{FF8C00}        % orange
+\definecolor{Nonlinear}{HTML}{FFED00}      % yellow
+\definecolor{NeuralNets}{HTML}{008026}     % green
+\definecolor{Ensemble}{HTML}{004DFF}       % blue
+\definecolor{Heterogeneity}{HTML}{750787}  % violet
+
+\begin{document}
+
+\renewcommand{\arraystretch}{1.4}
+
+\begin{tabular}{>{\raggedright}p{2.5cm}|>{\raggedright}p{5cm}|>{\raggedright}p{5cm}|>{\raggedright\arraybackslash}p{3cm}|}
+\hline
+\textbf{Week} & \textbf{Tuesday Class} & \textbf{Thursday Class} & \textbf{Suggested Readings} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\multicolumn{4}{|c|}{\cellcolor{MLBridge!70}\textbf{Module 1: ML1 Bridge}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{MLBridge!25}
+25-27 August & Course Overview. \newline Skill Assessment (for Group Formation) & Wrangling with features: categorical variables, missingness, scaling, transforming, selection. & \\
+\hline
+\rowcolor{MLBridge!25}
+1-3 September & Mastering model evaluation and optimization  & Introduction to PyTorch & \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\multicolumn{4}{|c|}{\cellcolor{HighDim!70}\textbf{Module 2: Dealing with High Dimensional Data}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{HighDim!25}
+8-10 September &    Regularized Regression through PyTorch and Stochastic Gradient Descent &  Principal Component Analysis as a preprocessing step. \newline Introduction to Pipelines &
+\\
+\hline
+\rowcolor{HighDim!25}
+15-17 September & {\bf Lab}: Partial Least Squares Regression (PLS) & \cellcolor{Nonlinear!25} Support Vector Machine I: The Linear Case & \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{Nonlinear}
+\multicolumn{4}{|c|}{\cellcolor{Nonlinear!70}\textbf{Module 3: Exploiting Non-Linear Relationships in Data}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{Nonlinear!25}
+22-24 September & Support Vector Machine II: The Non-Linear case through the Kernel Trick & {\bf Lab}: Predicting Seismic Building Response with Support Vector Regrssion & A. Chapter 3: {\small Maximum margin classification with support vector machines}\\
+\hline
+\rowcolor{Nonlinear!25}
+29 September-1 Octobe &  Kernels are EVERYWHERE & {\bf Lab}: Non-linear dimensionality reductions: t-SNE, and UMAP & A. Chapter 3: {\small Solving nonlinear problems using a kernel SVM}\\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+%\rowcolor{NeuralNets!45}
+\multicolumn{4}{|c|}{\cellcolor{NeuralNets!70}\textbf{Module 4: Neural Networks}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{NeuralNets!25}
+6-8 October & Reading Day (No Class) & Neural Networks I: Introduction \& Multi-Layer Perceptrons (MLPs) & \\
+\hline
+\rowcolor{NeuralNets!25}
+13-15 October &  {\bf Lab}: Manual implementation of MLPs for Classification and Regression using toy data & Neural Networks II: Deeper into model building, training and opmitization. & A. Chapter 11: {\small  Modeling complex functions with artificial neural networks}\\
+\hline
+\rowcolor{NeuralNets!25}
+20-22 October & {\bf Lab}: Application of  Neural Networks to Real Data & Neural Networks III: Improving generalization & A. Chapter 13: {\small Making model building more flexible with nn.Module} \\
+\hline
+\rowcolor{NeuralNets!25}
+27-29 October & {\bf Lab}: Implementing an autoencoder for non-linear dimensionality reduction &  \cellcolor{Ensemble!25} Bagging: Bootstrap Aggregating and Random Forest  & \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\multicolumn{4}{|c|}{\cellcolor{Ensemble!70}\textbf{Module 5: Ensemble Methods \& Meta-Learning}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{Ensemble!25}
+3-5 November & Election day (No class) & Boosting: Adaptive Boosting and Gradient Boosting  & \\
+\hline
+\rowcolor{Ensemble!25}
+10-12 November &  {\bf Lab}: Classifying Internet of Things Device Types with Bagging and Boosting  & \cellcolor{Heterogeneity!55} Clustering I: k-Means and Gaussian Mixture Models &\\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\multicolumn{4}{|c|}{\cellcolor{Heterogeneity!70}\textbf{Module 6: Tackling Population Heterogeneity}} \\
+\noalign{\global\arrayrulewidth=1.2pt}
+\hline
+\noalign{\global\arrayrulewidth=0.4pt}
+\rowcolor{Heterogeneity!25}
+17-19 November &  Clustering II: Hierarchical Clustering and DBSCAN & Clustering III: Validation & \\
+\hline
+\rowcolor{Heterogeneity!25}
+26-28 November &   {\bf Lab}: clustering &  Thanksgiving (No class) & \\
+\hline
+1-3 December & \multicolumn{3}{|c|}{Final Project Time} \\
+\hline
+\end{tabular}
+
+
+\end{document}

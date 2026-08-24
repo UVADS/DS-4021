@@ -48,7 +48,7 @@ Groups will be formed at the beginning of the semester by balancing skill levels
 
 This is the schedule for the core structure of the course. Please be aware that adjustments may occur throughout the semester, as sometimes things do not go exactly as planned. Any changes will be communicated.
 
-![Course Schedule](schedule.png)
+![Course Schedule](syllabus/schedule/schedule.png)
 
 ## A few Policies that will Govern the Class
 

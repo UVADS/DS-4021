@@ -1,0 +1,33 @@
+# Private instructor and archived material
+/instructor/
+/archive/
+/EDITORIAL_REVIEW.md
+
+# Unscheduled supplementary course material withheld from the public repository
+/course/02-high-dimensional-data/supplementary/
+/course/03-nonlinear-relationships/supplementary/
+
+# Temporarily withheld pending removal of embedded answer material
+/course/01-ml1-bridge/lectures/01-feature-wrangling.ipynb
+
+# Downloaded datasets retained locally but omitted from the public repository
+/course/02-high-dimensional-data/lectures/FashionMNIST/
+/course/02-high-dimensional-data/lectures/data_neuro_ds4021.npz
+
+# Local agent/application state
+/.agents/
+/.codex/
+
+# Jupyter autosaves
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Office temporary files
+.~lock.*#
+~$*
