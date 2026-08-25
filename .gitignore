@@ -7,9 +7,6 @@
 /course/02-high-dimensional-data/supplementary/
 /course/03-nonlinear-relationships/supplementary/
 
-# Temporarily withheld pending removal of embedded answer material
-/course/01-ml1-bridge/lectures/01-feature-wrangling.ipynb
-
 # Downloaded datasets retained locally but omitted from the public repository
 /course/02-high-dimensional-data/lectures/FashionMNIST/
 /course/02-high-dimensional-data/lectures/data_neuro_ds4021.npz
